@@ -23,11 +23,6 @@ h3{
 }
 
 
-
-#whatzap{
-    
-    z-index: 1;
-}
 /*header */
 #header{
     box-sizing: border-box;
@@ -38,7 +33,7 @@ h3{
     height: 50px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+  
 }
 
 #header h3, #header ul, #header nav, #navbar-links li{
@@ -283,12 +278,9 @@ h3{
     text-align: center;
     color: aliceblue;
     box-sizing: border-box;
-    -webkit-border-top-right-radius: 100px;
--webkit-border-bottom-right-radius: 100px;
--moz-border-radius-topright: 100px;
--moz-border-radius-bottomright: 100px;
-border-top-right-radius: 100px;
-border-bottom-right-radius: 100px;
+
+     border-top-right-radius: 100px;
+     border-bottom-right-radius: 100px;
 
 }
 
@@ -722,7 +714,7 @@ foter p {
     }
     #whatzap{
     position: absolute;
-    left: 300px;
+    right: 500px;
     }
     #header li{
         margin: 0 5px;
@@ -771,10 +763,20 @@ foter p {
        #banner-conteudo p{
     display: none;
 }
+#header{
+ box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:rgba(12, 118, 240);
+    color: white;
+    padding: 0 20px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    height: 300px;
        
  } 
 
-    @media(max-width:360px){
+    @media(max-width:380px){
 
         #banner-conteudo img{
             margin: 30px 0;
@@ -784,13 +786,30 @@ foter p {
             display: none;
         }
             #header li{
-                margin: 0;
-                padding: 0;
+                margin: 1px;
+                padding: 7px;
 
                 margin-left: auto;
+                margin-right: auto;
+                font-size: 15px;
             }
         
-         
+            #header{
+                box-sizing: border-box;
+                   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                   background-color:rgba(12, 118, 240);
+                   color: white;
+                   padding: 0 20px;
+                   height: 90px;
+                  
+                   width: 100%;
+                  
+                      
+                } 
+                #banner-conteudo{
+                    margin-top: 100px;
+
+                }
         }
   
    /* Animação */
@@ -847,3 +866,4 @@ foter p {
    height: 15px;
 
   }
+}
