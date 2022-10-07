@@ -716,6 +716,9 @@ foter p {
 }
 
  @media(max-width:489px){
+    *{
+        box-sizing: border-box;}
+        
     #header li{
         margin: 0 5px;
     }
@@ -738,7 +741,7 @@ foter p {
     }
     #header{
        
-        height: 100px;
+        height: 100%;
         
     }
 }
