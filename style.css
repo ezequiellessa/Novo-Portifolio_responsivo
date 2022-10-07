@@ -700,30 +700,13 @@ foter p {
 }
 
  @media(max-width:495px){
-    #header li{
-        margin:2px;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-        font-size:15px;
-    }
-    p , input , textarea {
-
-        font-size: 1rem;
-    }
-     h1 ,h2{
-        font-size: 1.5rem;
-    }
+    
     #whatzap{
-   left:0px ;
+   left:15px ;
    box-sizing: border-box;
 
     }
-#header{
-    height: 70px;
-   
-}
+
 #header ul{
     padding: 0;
 
@@ -735,8 +718,39 @@ foter p {
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-left: 80px;
+ }
+ #banner-conteudo img{
+    margin: 50px 0;
+    width: 300px;
+    height: 300px;
+}
+#header img{
+    display: none;
+}
+    #header li{
+        margin-right: 30px;
+        margin-bottom: 20px;
+
+        margin-left: auto;
+     
+    }
+
+ #banner{
+    height: 78vh;
+
+ }
+ #header{
+    height: 100px;
+ }
+ #navbar-links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
     margin-left: 50px;
  }
+
+
 
  }
  @media(max-width:650px){
