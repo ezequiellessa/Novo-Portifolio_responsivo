@@ -428,7 +428,7 @@ margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    box-sizing: border-box;
+   
 
 }
 
@@ -442,7 +442,7 @@ margin-top: 100px;
     width: 300px;
     height: 300px;
     display: block;
-    box-sizing: border-box;
+
 }
 
 
@@ -605,155 +605,179 @@ footer .desenvolvido{
 /* responsividade */
 
 
-
-
-
 @media(max-width:768px){
 
-/* responsividade */
-p , input , textarea {
-
-    font-size: 1.2rem;
-}
-/* header*/
-#header{
-    position:sticky;
-    color: white;
-    background: rgb(12, 118, 240);
-
-  
-}
-
-#navbar-links{
-    margin-right:  50px;
-   
-}
-
-/* header*/
-#banner{
-    height: 85vh;
-    padding-top: 5vh;
-    padding-bottom: 10vh;
-}
-#banner-conteudo{
-    width:70%;
-
-}
-#banner-conteudo img{
-    margin: 60px 0;
-    width: 300px;
-}
-
-/* quem somos*/
-#section-quemsomos{
-    padding: 1.5rem;
-    height: auto;
-
-}
-@media(max-width:650px){
-
+    /* responsividade */
+    p , input , textarea {
+    
+        font-size: 1.2rem;
+    }
+    /* header*/
     #header{
-        width: 100%;
+        position:sticky;
+        color: white;
+        background: rgb(12, 118, 240);
+    
+    
+       
     }
 
-        #header h3{
-            display: none;
+    #header h3 {
+
+        display:none;
+    }
+    #header img {
+
+        display:none;
+    }
+    
+    #navbar-links{
+        margin-right:  50px;
+       
+    }
+    
+    /* header*/
+    #banner{
+        height: 70vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+    }
+    #banner-conteudo{
+        width:70%;
+    
+    }
+    #banner-conteudo img{
+        margin: 60px 0;
+        width: 300px;
+    }
+    
+    /* quem somos*/
+    #section-quemsomos{
+        padding: 1.5rem;
+        height: auto;
+    
+    }
+    
+    /* serviços*/
+    
+    #section-servicos{
+        width: 90%;
+        box-sizing: border-box;
+    
+    }
+    #container{
+        flex-direction: column;
+    
+    }
+    .container-servicos{
+        padding: 20px 10px;
+    }
+    .container-servicos p{
+        margin-top: 0;
+    }
+    
+    #section-projetos{
+        width: 90%;
+    }
+    .container-projetos{
+        margin: 0;
+    }
+    .hardskill1{
+        margin: 50px;
+     }
+    
+    /* rodape*/
+    footer{
+        padding: 50px 10px;
+    
+    }
+    foter p {
+        margin-bottom: 30px;
+    }
+     footer form{
+        width: 100%;
+     }
+     footer .desenvolvido{
+        margin-top: 20px;
+        display: block;
+     }
+    
+    }
+    
+     @media(max-width:466px){
+        #header li{
+            margin: 0 5px;
+        }
+        p , input , textarea {
+    
+            font-size: 1rem;
+        }
+         h1 ,h2{
+            font-size: 1.5rem;
+        }
+
+        #header{
+            height: 100px;
+        }
+        #header nav{
+           display: flex;
+           justify-content: center;
+           text-align: center;
+        }
+        #header nav li{ 
+            margin: 10px;
             
-        } 
+    }
+}
+    
+     @media(max-width:650px){
+    
+        #header{
+            width: 100%;
+        }
         #header img{
             display: none;
             
-        } 
-
- 
-        #banner-conteudo img{
-            margin: 50px 0;
-            width: 260px;
-    }
-
-       #banner-conteudo p{
-    display: none;
-
-}
-
- #header nav {
-    text-align: center;
- }
- 
-       
- } 
-
-
-
- @media(max-width:495px){
+        }
     
-
-*{
-    box-sizing: border-box;
-}
-#header ul{
-    padding: 0;
-
-}
-#header{
-    height: 140px;
- }
- #navbar-links{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-left: 80px;
- }
- #banner-conteudo img{
-    margin: 0;
-    width: 100px;
+           
     
-   
-}
-#header img{
-    display: none;
-}
-    #header li{
-        margin-right: 30px;
-        margin-bottom: 20px;
-
-        margin-left: auto;
-        font-size: 20px;
      
-    }
-
-    #banner{
-        height: 68vh;
-
-     }
-   #navbar-links{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        margin-left: 50px;
-     }
-     #banner img{
-        height: 150px;
-        width: 150px;
-        margin-top: 20px;
-
-
-}
-#whatzap{
+            #banner-conteudo img{
+                margin: 50px 0;
+                width: 260px;
+        }
     
-    position: absolute;
-    display: flex;
-    left: 316px;
-    top:700px;
-    z-index: 1;
+           #banner-conteudo p{
+            display: none;
+
+       
+    }
+           
+     } 
+    
+        @media(max-width:375px){
+    
+            #banner-conteudo img{
+               
+                width: 150px;
+                height: 150px;;
+            }
+            #header img{
+                display: none;
+            }
+                #header li{
+                    margin: 0;
+                    padding: 0;
+    
+                    margin-left: auto;
+                }
+            
+             
+            }
 
 
- }
- 
 
-}
-      
-  
    /* Animação */
 
 [data-anime] {
@@ -783,4 +807,3 @@ p , input , textarea {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
-}
