@@ -728,6 +728,16 @@ foter p {
     padding: 0;
 
 }
+#header{
+    height: 100px;
+ }
+ #navbar-links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+ }
+
  }
  @media(max-width:650px){
 
@@ -763,6 +773,7 @@ foter p {
  #header nav {
     text-align: center;
  }
+ 
        
  } 
 
