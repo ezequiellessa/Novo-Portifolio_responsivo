@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   
 }
 
@@ -96,7 +97,7 @@ h3{
 /* banner*/
 
 #banner{
-    height: 75vh;
+    height: 88vh;
     background-image: url("./imagens/banner.png");
     background-size: cover;
     padding-top: 15vh;
@@ -104,7 +105,7 @@ h3{
 }
 
 #banner-conteudo{
-    width: 80%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -278,6 +279,7 @@ h3{
 #section-quemsomos{
     padding-top: 50px;
     height: 400px;
+    width: 100%;
     background-color: rgb(0, 217, 255);
     text-align: center;
     color: aliceblue;
@@ -630,7 +632,7 @@ p , input , textarea {
 
 /* header*/
 #banner{
-    height: 70vh;
+    height: 85vh;
     padding-top: 5vh;
     padding-bottom: 10vh;
 }
@@ -696,9 +698,14 @@ foter p {
 
 }
 
- @media(max-width:393px){
+ @media(max-width:495px){
     #header li{
-        margin: 0 5px;
+        margin:2px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        font-size:15px;
     }
     p , input , textarea {
 
@@ -707,8 +714,20 @@ foter p {
      h1 ,h2{
         font-size: 1.5rem;
     }
-}
+    #whatzap{
+   left:0px ;
+   box-sizing: border-box;
 
+    }
+#header{
+    height: 70px;
+   
+}
+#header ul{
+    padding: 0;
+
+}
+ }
  @media(max-width:650px){
 
     #header{
@@ -716,6 +735,10 @@ foter p {
     }
 
         #header h3{
+            display: none;
+            
+        } 
+        #header img{
             display: none;
             
         } 
@@ -728,15 +751,26 @@ foter p {
 
        #banner-conteudo p{
     display: none;
+
 }
+ #whatzap{
+  
+    
+
+    right: 1000px;
+ }
+ #header nav {
+    text-align: center;
+ }
        
  } 
 
-    @media(max-width:360px){
+    @media(max-width:380px){
 
         #banner-conteudo img{
-            margin: 30px 0;
-            width: 200px
+            margin: 50px 0;
+            width: 200px;
+            height: 200px;
         }
         #header img{
             display: none;
@@ -748,8 +782,13 @@ foter p {
                 margin-left: auto;
             }
         
-         
-        }
+         #banner{
+            height: 80vh;
+         }
+
+
+         }
+      
   
    /* Animação */
 
@@ -777,3 +816,4 @@ foter p {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
+ 
