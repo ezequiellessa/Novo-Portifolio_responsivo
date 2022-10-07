@@ -717,8 +717,13 @@ foter p {
 
  @media(max-width:489px){
     *{
-        box-sizing: border-box;}
-        
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    #whatzap{
+    position: absolute;
+    left: 300px;
+    }
     #header li{
         margin: 0 5px;
     }
