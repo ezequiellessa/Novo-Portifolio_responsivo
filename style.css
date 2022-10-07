@@ -384,6 +384,10 @@ margin-top: 100px;
 
 /* projetos */
 
+#section-projetos h2{
+    margin-bottom: 50px;
+}
+
 #section-projetos{
     padding-top: 50px;
     text-align: center;
