@@ -293,10 +293,7 @@ h3{
     
 }
 
-#section-quemsomos h2{
- 
 
-}
 
 /* serviços */
 #section-servicos{
@@ -629,8 +626,18 @@ p , input , textarea {
     position:sticky;
     color: white;
     background: rgb(12, 118, 240);
+}
+
+   #header img {
+    display: none;
 
 
+    }
+    #header h3 {
+        display: none;
+    
+    
+        }
    
 }
 
@@ -641,7 +648,7 @@ p , input , textarea {
 
 /* header*/
 #banner{
-    height: 70vh;
+    height: 71vh;
     padding-top: 5vh;
     padding-bottom: 10vh;
 }
@@ -705,7 +712,6 @@ foter p {
     display: block;
  }
 
-}
 
  @media(max-width:489px){
     *{
@@ -768,11 +774,13 @@ foter p {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color:rgba(12, 118, 240);
     color: white;
-    padding: 0 20px;
+    padding: 0 10px;
     height: 50px;
     position: fixed;
     width: 100%;
-    height: 300px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
        
  } 
 
@@ -780,7 +788,9 @@ foter p {
 
         #banner-conteudo img{
             margin: 30px 0;
-            width: 200px
+            width: 150px;
+            height: 150px;
+   
         }
         #header img{
             display: none;
@@ -799,11 +809,14 @@ foter p {
                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                    background-color:rgba(12, 118, 240);
                    color: white;
-                   padding: 0 20px;
+                   padding: 0 10px;
                    height: 90px;
                   
                    width: 100%;
-                  
+                   font-size: 10px;
+                   margin: 0px;
+                   margin-left: auto;
+                   margin-right: auto;
                       
                 } 
                 #banner-conteudo{
