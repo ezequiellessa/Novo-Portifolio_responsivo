@@ -124,7 +124,7 @@ h3{
     border-radius: 50%;
     
     animation: float 5s ease-in-out infinite;
-    animation: fromTop .7s .4s backwards;
+    
 }
    
   
@@ -770,21 +770,32 @@ foter p {
 
         #banner-conteudo img{
             margin: 50px 0;
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
         }
         #header img{
             display: none;
         }
             #header li{
-                margin: 0;
-                padding: 0;
+                margin-right: 30px;
+                margin-bottom: 20px;
 
                 margin-left: auto;
+             
             }
         
          #banner{
-            height: 80vh;
+            height: 78vh;
+
+         }
+         #header{
+            height: 100px;
+         }
+         #navbar-links{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-left: 50px;
          }
 
 
@@ -799,7 +810,7 @@ foter p {
   }
   
   [data-anime="left"] {
-    transform: translate3d(-400px, 0, 0);
+    transform: translate3d(-100px, 0, 0);
   }
   [data-anime="leftmaior"] {
     transform: translate3d(-900px, 0, 0);
@@ -810,7 +821,7 @@ foter p {
     transform: translate3d(0, -100px, 0);
   }
   [data-anime="down"] {
-    transform: translate3d(0, 200px, 0);
+    transform: translate3d(0, 100px, 0);
   }
   
   

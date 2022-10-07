@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/116ff03f5b.js" crossorigin="anonymous"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
 
 
     <title>Portifolio-Responsivo</title>
@@ -18,10 +19,10 @@
 
 <nav>
 <ul id="navbar-links">
-<li> <a href="">Quem Sou</a></li>
-<li> <a href="">Habilidades</a></li>
-<li><a href="">Projetos</a></li>
-<li><a href="">Contato</a></li>
+<li> <a href="#butao">Quem Sou</a></li>
+<li> <a href="#section-servicos">Habilidades</a></li>
+<li><a href="#section-projetos">Projetos</a></li>
+<li><a href="#section-footer">Contato</a></li>
 
 </ul>
 
@@ -33,12 +34,12 @@
         <div id="banner" >
             
 
-        <div id="banner-conteudo">
+        <div id="banner-conteudo" >
 
 
             <h1 >Olá eu me chamo de Ezequiel Lessa</h1><br><br>
             <p class="animacaocursor" > Sou Desenvolvedor Front End Jr </p>
-            <img  class="imageminicio"  src="./imagens/minha2.jpeg" alt="">
+            <div class="your-element" data-tilt> <img  class="imageminicio"  src="./imagens/minha2.jpeg" alt=""></div>
 
         
     
@@ -64,7 +65,7 @@
     <a  id="butao" class="menuico" href="./curriculo.pdf" download="">Currículo</a>
     
 </div>
-<section id="section-quemsomos" data-anime="leftmaior">
+<section id="section-quemsomos" data-anime="left">
     <h2>Conheça um pouco Sobre Mim</h2>
     <p>Olá ne chamo Ezequiel tenho 35 anos , Estou atualmente no 2º período o análise e desenvolvimento de software na faculdade pitagoras de Camaçari - BA .
         Cursando tambem Curso de Formação de Desenvolvedor Full stack Jr da StartSe Tech Academy.
@@ -231,7 +232,7 @@
         <hr>
 </section>
 
-
+  <!-- projetos -->
 <section id="section-projetos" >
 
 
@@ -301,7 +302,7 @@
     </main>
 
 
-    <footer >
+    <footer  id="section-footer">
 
         <div class="container4" id="contato" data-anime="down"> 
            
@@ -336,8 +337,9 @@
     <div class="footer">
         <p>Desenvolvido por <span class="desenvolvido">Ezequiel lessa</span></p>
    </div>
-     
+   <script src="vanilla-tilt.js"></script>
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
    <script src="./main.js"></script>
 </body>
 
