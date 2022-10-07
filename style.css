@@ -277,11 +277,18 @@ h3{
 
 #section-quemsomos{
     padding-top: 50px;
+    width: 95%;
     height: 400px;
     background-color: rgb(0, 217, 255);
     text-align: center;
     color: aliceblue;
-    
+    box-sizing: border-box;
+    -webkit-border-top-right-radius: 100px;
+-webkit-border-bottom-right-radius: 100px;
+-moz-border-radius-topright: 100px;
+-moz-border-radius-bottomright: 100px;
+border-top-right-radius: 100px;
+border-bottom-right-radius: 100px;
 
 }
 
