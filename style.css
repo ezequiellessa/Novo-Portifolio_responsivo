@@ -610,7 +610,7 @@ footer .desenvolvido{
    
 /* responsividade */
 
-@media(max-width:768px){
+@media(max-width:780px){
 
 /* responsividade */
 p , input , textarea {
@@ -700,7 +700,7 @@ foter p {
 
 }
 
- @media(max-width:393px){
+ @media(max-width:489px){
     #header li{
         margin: 0 5px;
     }
@@ -710,6 +710,21 @@ foter p {
     }
      h1 ,h2{
         font-size: 1.5rem;
+    }
+    header img{
+        display: none;
+       
+    }
+    #navbar-links{
+        font-size: 20px;
+       display: flex;  
+       align-items: center;  
+       text-align: center;
+    }
+    #header{
+       
+        height: 100px;
+        
     }
 }
 
