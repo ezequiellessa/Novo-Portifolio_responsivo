@@ -291,11 +291,11 @@ h3{
     margin-left: auto;
     margin-right: auto;
     line-height: 30px;
-    animation: aparecer 4s , 2s backwards;
+    
 }
 
 #section-quemsomos h2{
-    animation: aparecer2 10s , 2s backwards;
+ 
 
 }
 
