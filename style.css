@@ -380,6 +380,7 @@ margin-top: 100px;
 
     height:80px ;
     padding: 15px;
+    
 }
 
 /* projetos */
@@ -397,6 +398,11 @@ margin-top: 100px;
     color: #060537;
       
 }
+.projeto li img{
+    
+border-radius: 5%;
+
+}
 
 #section-projetos p{
     margin-top: 20px;
@@ -409,6 +415,7 @@ margin-top: 100px;
     font-weight: bold;
     color: #060537;
     text-decoration: none;
+
 
 }
 
@@ -460,6 +467,7 @@ margin-top: 100px;
 
 .projeto a:hover:before{
    background: rgba(0,0,0,.5); 
+   border-radius: 5%;
 } 
 
 .projeto a:after{
