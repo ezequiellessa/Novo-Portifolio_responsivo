@@ -23,6 +23,11 @@ h3{
 }
 
 
+
+#whatzap{
+    
+    z-index: 1;
+}
 /*header */
 #header{
     box-sizing: border-box;
@@ -33,7 +38,7 @@ h3{
     height: 50px;
     position: fixed;
     width: 100%;
-  
+    z-index: 1;
 }
 
 #header h3, #header ul, #header nav, #navbar-links li{
@@ -272,15 +277,11 @@ h3{
 
 #section-quemsomos{
     padding-top: 50px;
-    width: 95%;
     height: 400px;
     background-color: rgb(0, 217, 255);
     text-align: center;
     color: aliceblue;
-    box-sizing: border-box;
-
-     border-top-right-radius: 100px;
-     border-bottom-right-radius: 100px;
+    
 
 }
 
@@ -290,10 +291,13 @@ h3{
     margin-left: auto;
     margin-right: auto;
     line-height: 30px;
-    
+    animation: aparecer 4s , 2s backwards;
 }
 
+#section-quemsomos h2{
+    animation: aparecer2 10s , 2s backwards;
 
+}
 
 /* serviços */
 #section-servicos{
@@ -376,14 +380,9 @@ margin-top: 100px;
 
     height:80px ;
     padding: 15px;
-    
 }
 
 /* projetos */
-
-#section-projetos h2{
-    margin-bottom: 50px;
-}
 
 #section-projetos{
     padding-top: 50px;
@@ -393,11 +392,6 @@ margin-top: 100px;
     margin-right: auto;
     color: #060537;
       
-}
-.projeto li img{
-    
-border-radius: 5%;
-
 }
 
 #section-projetos p{
@@ -411,7 +405,6 @@ border-radius: 5%;
     font-weight: bold;
     color: #060537;
     text-decoration: none;
-
 
 }
 
@@ -463,7 +456,6 @@ border-radius: 5%;
 
 .projeto a:hover:before{
    background: rgba(0,0,0,.5); 
-   border-radius: 5%;
 } 
 
 .projeto a:after{
@@ -614,7 +606,7 @@ footer .desenvolvido{
    
 /* responsividade */
 
-@media(max-width:780px){
+@media(max-width:768px){
 
 /* responsividade */
 p , input , textarea {
@@ -626,18 +618,8 @@ p , input , textarea {
     position:sticky;
     color: white;
     background: rgb(12, 118, 240);
-}
-
-   #header img {
-    display: none;
 
 
-    }
-    #header h3 {
-        display: none;
-    
-    
-        }
    
 }
 
@@ -648,7 +630,7 @@ p , input , textarea {
 
 /* header*/
 #banner{
-    height: 71vh;
+    height: 70vh;
     padding-top: 5vh;
     padding-bottom: 10vh;
 }
@@ -712,16 +694,9 @@ foter p {
     display: block;
  }
 
+}
 
- @media(max-width:489px){
-    *{
-        box-sizing: border-box;
-        z-index: 1;
-    }
-    #whatzap{
-    position: absolute;
-    right: 500px;
-    }
+ @media(max-width:393px){
     #header li{
         margin: 0 5px;
     }
@@ -731,21 +706,6 @@ foter p {
     }
      h1 ,h2{
         font-size: 1.5rem;
-    }
-    header img{
-        display: none;
-       
-    }
-    #navbar-links{
-        font-size: 20px;
-       display: flex;  
-       align-items: center;  
-       text-align: center;
-    }
-    #header{
-       
-        height: 100%;
-        
     }
 }
 
@@ -769,60 +729,26 @@ foter p {
        #banner-conteudo p{
     display: none;
 }
-#header{
- box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color:rgba(12, 118, 240);
-    color: white;
-    padding: 0 10px;
-    height: 50px;
-    position: fixed;
-    width: 100%;
-    height: 90px;
-    margin-left: auto;
-    margin-right: auto;
        
  } 
 
-    @media(max-width:380px){
+    @media(max-width:360px){
 
         #banner-conteudo img{
             margin: 30px 0;
-            width: 150px;
-            height: 150px;
-   
+            width: 200px
         }
         #header img{
             display: none;
         }
             #header li{
-                margin: 1px;
-                padding: 7px;
+                margin: 0;
+                padding: 0;
 
                 margin-left: auto;
-                margin-right: auto;
-                font-size: 15px;
             }
         
-            #header{
-                box-sizing: border-box;
-                   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                   background-color:rgba(12, 118, 240);
-                   color: white;
-                   padding: 0 10px;
-                   height: 90px;
-                  
-                   width: 100%;
-                   font-size: 10px;
-                   margin: 0px;
-                   margin-left: auto;
-                   margin-right: auto;
-                      
-                } 
-                #banner-conteudo{
-                    margin-top: 100px;
-
-                }
+         
         }
   
    /* Animação */
@@ -851,32 +777,3 @@ foter p {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
-
-   /* css da pagina obrigado */
-
-  .bodyobrigado {
-    background: #000;
-    color: #f0f0f6;
-    font-size: 16px;
-    align-items: center;
-   
-
-  }
-  .h2obrigado{
-    text-align: center;
-    margin-top: 200px;
-    
-
-  }
-  .botone{
-    display: flex;
-    width: 300px;
-    margin-left: auto;
-     margin-right: auto;
-    justify-content: center;
-
-   margin-top: 200px;
-   height: 15px;
-
-  }
-}
