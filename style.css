@@ -11,7 +11,6 @@
 body, p, h1 , h2 , h3, input , textarea {
     margin: 0;
     font-family: sans-serif;
-   
 
 }
 
@@ -77,9 +76,6 @@ h3{
 
 #header ul{
     margin-top: 20px;
-}
-#navbar-links{
-    float: right;
 }
 
 #navbar-links a{
@@ -605,28 +601,13 @@ footer .desenvolvido{
     font-weight:bold ;
     color: #09d;
   }
-
-/* botão da responsavidade */
-  .checkbtn {
-	font-size: 30px;
-	color: rgb(255, 255, 255);
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
-	display: none;
-
-  
-}
-#check {
-	display: none;
-}
    
 /* responsividade */
 
+
 @media(max-width:768px){
 
-
+    /* responsividade */
     p , input , textarea {
     
         font-size: 1.2rem;
@@ -636,67 +617,25 @@ footer .desenvolvido{
         position:sticky;
         color: white;
         background: rgb(12, 118, 240);
-        height: 50px;
     
-    }
-    /* menu hamburger*/
-    .checkbtn {
-		display: block;
-	}
-	 ul{
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		background: #1d075f;
-		top: 30px;
-		left: -100%;
-		text-align: center;
-		transition: all .5s;
-	}
-    #header ul li {
-
-	    display: block;
-        
-		margin: 50px 0;
-		line-height: 30px;
-        
-	}
-	#header ul li a {
-		font-size: 20px;
-        display: block;
-        
-		margin: 50px 0;
-		line-height: 30px;
+    
        
-       
-	}
-	#header a:hover, a.active {
-		background: none;
-		color:rgb(12, 118, 240);
-        
-	}
-	#check:checked ~ ul {
-		left: 0;
-	}
-    .checkbtn i{
-        position: fixed;
-        margin-top: 10px;
-
     }
 
+    #header h3 {
 
+        display:none;
+    }
+    #header img {
 
-
-
-      
- /* menu hamburger*/
-
- #icone{
-    position: fixed;
-
-  margin-top: 10px;
- }
-
+        display:none;
+    }
+    
+    #navbar-links{
+        margin-right:  50px;
+       
+    }
+    
     /* header*/
     #banner{
         height: 70vh;
@@ -777,35 +716,70 @@ footer .desenvolvido{
             font-size: 1.5rem;
         }
 
-    
+        #header{
+            height: 100px;
+        }
+        #header nav{
+           display: flex;
+           justify-content: center;
+           text-align: center;
+        }
+        #header nav li{ 
+            margin: 10px;
+            
+    }
 }
     
      @media(max-width:650px){
+    
+        #header{
+            width: 100%;
+        }
+        #header img{
+            display: none;
+            
+        }
+    
+           
+    
+     
+            #banner-conteudo img{
+                margin: 50px 0;
+                width: 260px;
+        }
     
            #banner-conteudo p{
             display: none;
 
        
     }
-    @media(max-width:344px){
-        #header h3{
-            font-size: 18px;
-        }
-    }
-
            
      } 
     
-       
-              
+        @media(max-width:375px){
+    
+            #banner-conteudo img{
+               
+                width: 150px;
+                height: 150px;;
+            }
+            #header img{
+                display: none;
+            }
+                #header li{
+                    margin: 0;
+                    padding: 0;
+    
+                    margin-left: auto;
+                }
           
-        
+            }
 
 
 
    /* Animação */
 
-  [data-anime] {
+[data-anime] {
     opacity: 0;
     transition: .5s;
   }
